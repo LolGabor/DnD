@@ -203,5 +203,245 @@
                 "Nyah and Neon will come up with something fun."
             ]
         }
+    ],
+    "spell":[
+        {
+            "name":"Wound Transference",
+            "level":"1",
+            "school":"N",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"touch"
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You touch a creature, inflicting {@damage 4d6} points of necrotic damage. Half of the damage you deal, you absorb and are able to heal yourself or another creature within 30 feet for such an amount."
+            ],
+            "source":"Ryian",
+            "page":1,
+            "components":{
+                "s":true,
+                "m": "a balanced material plane, which the spell consumes"
+            },
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 2d6} for each spell slot level above 1"
+                    ]
+                }
+            ],
+            "damageInflict":[
+                "necrotic"
+            ]
+        },
+        {
+            "name":"Conditional Strike",
+            "level":"2",
+            "school":"T",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"point",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You target an enemy and an ally. Every condition on said ally is transferred onto the enemy, unless it succeeds on a COnstitution saving throw. For every condition, apart from unconscious, the enemy takes {@damage 2d8} force damage from the violent transfer and the ally heals for the same amount."
+            ],
+            "source":"Ryian",
+            "page":1,
+            "components":{
+                "m": "a balanced material plane, which the spell consumes"
+            }
+        },
+        {
+            "name":"Life Siphon",
+            "level":"3",
+            "school":"V",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"sphere",
+                "distance":{
+                    "type":"feet",
+                    "amount":120
+                }
+            },
+            "duration":[
+                {
+                    "type":"timed",
+                    "duration": {
+                        "type":"minute",
+                        "amount":1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You form a 20ft sphere within a space you can see which proceeds to suck the life out of anyone caught within it. Any creature that starts or ends it's turn within the sphere, must make a CON save or suffer {@damage 4d10} necrotic damage.Creatures hit by this ability can not heal or be healed until the start of their next turn.",
+                "Half of this damage can then be distributed as you see fit to allies within 60 feet of you."
+            ],
+            "source":"Ryian",
+            "page":1,
+            "components":{
+                "m":"a balanced material plane, which the spell consumes"
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 1d6} for each spell slot level above 3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Aura of Balance",
+            "level":"4",
+            "school":"A",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"target",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"timed",
+                    "duration": {
+                        "type":"minute",
+                        "amount":1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You create an aura that extends 10 feet for the duration around yourself or an ally that hurts the wicked and protects those who fight against such things. When an enemy starts or ends its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} necrotic or radiant damage (your choice), or half as much on a successful one. Half the damage dealt will then be used as a shield for the righteous as temporary hit points that last for one round. A creature can willing fail this saving throw."
+            ],
+            "source":"Ryian",
+            "page":1,
+            "components":{
+                "m": "a balanced material plane, which the spell consumes"
+            },
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 1d8} for each spell slot level above 4"
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Circle of Life",
+            "level":"5",
+            "school":"V",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"cone",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "something something"
+            ],
+            "source":"Ryian",
+            "page":1,
+            "components":{
+                "m": "a balanced material plane, which the spell consumes"
+            }
+        }
     ]
 }

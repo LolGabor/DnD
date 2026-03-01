@@ -1,0 +1,2328 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "4thage",
+				"abbreviation": "4thA",
+				"full": "4th age",
+				"version": "1.0.0",
+				"authors": [
+					"Diebor"
+				],
+				"convertedBy": [
+					"Tzenai"
+				]
+			}
+		],
+		"dateAdded": 1736746413,
+		"dateLastModified": 1736746413
+	},
+	"monster": [
+		{
+			"name": "Shadow Elf Group Leader",
+			"shortName": "elfie",
+			"source": "4thage",
+			"level": 12,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "31d8 + 62",
+				"average": 201
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "45 ft. when in darkness"
+				}
+			},
+			"str": 10,
+			"dex": 22,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"dex": "+10",
+				"cha": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"intimidation": "+8",
+				"perception": "+6",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 240 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The elf's spellcasting ability is Charisma (spell save {@dc 16}, +8 to hit with spell attacks.) It can cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"2e": [
+							"{@spell darkness}",
+							"{@spell misty step}",
+							"{@spell shield}"
+						],
+						"1e": [
+							"{@spell bestow curse}",
+							"{@spell finger of death}",
+							"{@spell shadow of moil|XGE}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the elfie has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the elfie is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elfie instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the elfie fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Creature of Darkness",
+					"entries": [
+						"Magical darkness doesn't impede the elfie's darkvision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Elfie makes three attacks with his shortsword. It can replace one of the attacks with a use of his spellcasting ability."
+					]
+				},
+				{
+					"name": "Shadow Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage. This attack counts as magical for the purposes of overcoming resistances and immunities."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Leadership",
+					"entries": [
+						"For 1 minute, elfie can utter a special command or warning whenever a nonhostile create that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a {@dice d8} to its roll provided it can hear and understand elfie. A creature can benefit from only one Leadership die at a time. The effect ends if elfie is {@condition incapacitated}."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Elfie moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Elfie makes one weapon attack or casts a cantrip."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD",
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Shadow Elf Soldier Melee",
+			"shortName": "melee guy",
+			"source": "4thage",
+			"level": 12,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				},
+				{
+					"ac": 18,
+					"condition": "with {@item shield|phb}"
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 44",
+				"average": 143
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "45 ft. when in darkness"
+				}
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"con": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"stealth": "+4",
+				"athletics": "+6",
+				"medicine": "+4",
+				"survival": "+4"
+			},
+			"senses": [
+				"darkvision 240 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The elf's spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks.) It can cast the following spells, requiring no material components:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell shocking grasp}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the elfie has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"The melee guy has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Creature of Darkness",
+					"entries": [
+						"Magical darkness doesn't impede the melee guy's darkvision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Elfie makes two attacks with his warhammer."
+					]
+				},
+				{
+					"name": "Shadowtouched Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, or 7 ({@damage 1d8 + 3}) bludgeoning damage if used with both hands, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"damageTagsSpell": [
+				"L",
+				"O"
+			]
+		},
+		{
+			"name": "Shadow Elf Soldier Ranged",
+			"shortName": "ranged guy",
+			"source": "4thage",
+			"level": 12,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 22",
+				"average": 121
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "45 ft. when in darkness"
+				}
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 12,
+			"int": 8,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"con": "+4",
+				"cha": "+5",
+				"dex": "+7"
+			},
+			"skill": {
+				"stealth": "+7",
+				"medicine": "+4",
+				"survival": "+4",
+				"acrobatics": "+7"
+			},
+			"senses": [
+				"darkvision 240 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The elf's spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks.) It can cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell shocking grasp}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the elfie has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"The ranged guy has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Creature of Darkness",
+					"entries": [
+						"Magical darkness doesn't impede the melee guy's darkvision."
+					]
+				},
+				{
+					"name": "Shadow Elf Cunning",
+					"entries": [
+						"Ranged guy's quick thinking and agility allow you to move and act quickly. They can take a bonus action on each of its turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Elfie makes two Longbow attacks."
+					]
+				},
+				{
+					"name": "Shadowtouched Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"L",
+				"O"
+			]
+		},
+		{
+			"name": "Shadow Elf Soldier Spellcaster",
+			"shortName": "mage guy",
+			"source": "4thage",
+			"level": 12,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "(with {@spell mage armor})"
+				}
+			],
+			"hp": {
+				"formula": "16d6 + 48",
+				"average": 104
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "45 ft. when in darkness"
+				}
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 20,
+			"cha": 12,
+			"save": {
+				"con": "+6",
+				"dex": "+6",
+				"wis": "+8"
+			},
+			"skill": {
+				"stealth": "+6",
+				"survival": "+8",
+				"acrobatics": "+6",
+				"arcana": "+4",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 240 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The elf's spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks.) It can cast the following spells, requiring no material components:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}",
+								"{@spell mage hand}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell healing word}",
+								"{@spell mage armor}",
+								"{@spell shield}",
+								"{@spell Tasha's hideous laughter}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkbolt|BookOfEbonTides}",
+								"{@spell darkness}",
+								"{@spell pass without trace}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell mass healing word}",
+								"{@spell revivify}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell Evard's black tentacles}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell cone of cold}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell heal}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis"
+				},
+				{
+					"name": "",
+					"type": "spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}",
+								"{@spell mage hand}",
+								"{@spell shocking grasp}"
+							]
+						}
+					}
+				}
+			],
+			"trait": [
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the mage guy has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"The mage guy has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Creature of Darkness",
+					"entries": [
+						"Magical darkness doesn't impede the mage guy's darkvision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"I",
+				"L",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Silhouette Demon",
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"source": "4thage",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				26,
+				{
+					"ac": 21,
+					"condition": "when in bright light",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "70d8 + 350",
+				"average": 665
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 24,
+			"dex": 30,
+			"con": 20,
+			"int": 30,
+			"wis": 28,
+			"cha": 20,
+			"passive": 28,
+			"cr": "30",
+			"shortName": "demon",
+			"level": 20,
+			"senses": [
+				"blindsight 45 ft.",
+				"darkvision 240 ft.",
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD",
+				"U"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Languages Known in Life"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"save": {
+				"con": "+13",
+				"cha": "+13",
+				"wis": "+17"
+			},
+			"skill": {
+				"athletics": "+16",
+				"deception": "+14",
+				"stealth": "+19",
+				"intimidation": "+14",
+				"perception": "+18"
+			},
+			"resist": [
+				"fire",
+				"lightning",
+				"necrotic",
+				"thunder"
+			],
+			"immune": [
+				"cold",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Relentless Hunter",
+					"entries": [
+						"The demon has advantage on Wisdom ({@skill Perception}) checks that rely on sight, hearing or smell. The "
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the demon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The demon's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Remenant of the Ages",
+					"entries": [
+						"Since the first Age, the Silhouette Demon has consumed the knowledge and power of heroes past, causing them to retain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								".",
+								".",
+								".",
+								"."
+							]
+						}
+					]
+				},
+				{
+					"name": "Dark Carapace",
+					"entries": [
+						"While in darkness, the demon takes 6 less damage from all sources, except from Psychic and Force damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Keen Senses",
+				"Legendary Resistances",
+				"Magic Weapons",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The demon makes three attacks: one with their Chains of Light, and one with their Claws of Darkness"
+					]
+				},
+				{
+					"name": "Chains of Light",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}18 ({@damage 3d6 + 8}) bludgeoning damage, plus 7 ({@damage 2d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Claws of Darkness",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage, plus 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Chains of Light",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}34 ({@damage 4d6 + 20}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 26} Dexterity saving throw, or be {@condition restrained} by the chains until the start of the demon's next turn. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"bonus": [
+				{
+					"name": "Shapeshift",
+					"entries": [
+						"The demon assumes the form of a foe it killed in the last 500 years. It retains its mental statistics."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Shapeshift",
+					"entries": [
+						"The demon uses the Shapeshift action."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The demon moves up to it's movement speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Summon Puppet (Costs 2 Actions)",
+					"entries": [
+						"The demon summons two {@creature Shadow Puppet|4thage}."
+					]
+				},
+				{
+					"name": "Chains of Light",
+					"entries": [
+						"The demon makes one *Chains of Light* attack."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Silhouette Demon",
+				"source": "4thage"
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"R",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Shadow Puppet",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "4thage",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "3d6 + 12",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 6,
+			"cha": 12,
+			"passive": 8,
+			"cr": "3",
+			"shortName": "puppet",
+			"level": 4,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 240 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Languages Known in Life"
+			],
+			"save": {
+				"str": "+4",
+				"con": "+6",
+				"dex": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"stealth": "+4",
+				"religion": "+3",
+				"intimidation": "+3",
+				"medicine": "+0"
+			},
+			"resist": [
+				"cold",
+				"fire",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The puppet has advantage on an attack roll against a creature if at least one of the puppet's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Shielded Mind",
+					"entries": [
+						"The puppet is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+					]
+				},
+				{
+					"name": "Hive Mind",
+					"entries": [
+						"Gain the senses of all other creatures with this feature."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The puppet makes two Dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage, plus 3 ({@damage 1d6}) cold damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			]
+		},
+		{
+			"name": "Shadow Beast",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "4thage",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 4,
+			"wis": 12,
+			"cha": 9,
+			"passive": 14,
+			"cr": "6",
+			"shortName": "beast",
+			"level": 8,
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 240 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"Languages Known in Life"
+			],
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+6",
+				"investigation": "+0",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"cold",
+				"fire",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "non-magical"
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The beast has advantage on an attack roll against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Hive Mind",
+					"entries": [
+						"Gain the senses of all other creatures with this feature."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The beast makes two claw attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, plus 3 ({@damage 1d6}) cold damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Goblin Scout Leader",
+			"source": "4thage",
+			"page": 128,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblin",
+					"Support"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"insight": "+3",
+				"intimidation": "+2",
+				"stealth": "+5",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Crafty",
+					"entries": [
+						"The underboss doesn't provoke opportunity attacks when they move out of an enemy's reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The underboss makes two Shortsword attacks or two Longbow attacks. They can replace one attack with a use of Command."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Command",
+					"entries": [
+						"The underboss chooses one ally they can see within 30 feet of them. If the target can hear the underboss, the target can use their reaction to move up to their speed or make one weapon attack."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit +5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) Piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Get Reckless {@recharge}",
+					"entries": [
+						"Each willing ally within 30 feet of the underboss who can hear them becomes reckless until the start of the underboss's next turn. While reckless, a creature has advantage on attack rolls, and attack rolls against the creature have advantage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Cowardly Commander",
+					"entries": [
+						"When a creature the underboss can see hits them with an attack, the underboss chooses a willing ally within 5 feet of them. The attack hits the ally instead."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Goblin Scout",
+			"source": "4thage",
+			"page": 127,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblin",
+					"Artillery"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Crafty",
+					"entries": [
+						"The sniper doesn't provoke opportunity attacks when they move out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Sniper",
+					"entries": [
+						"If the sniper misses with a ranged weapon attack while they are hidden, they remain hidden. Additionally, if the sniper hits a target with a ranged weapon attack while they have advantage on the attack roll, the attack deals an extra 3 ({@damage 1d6}) damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit +5} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) Piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Sneak",
+					"entries": [
+						"The sniper takes the Hide action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/FleeMortals/monsterToken/Goblin%20Sniper.webp"
+			},
+			"attachedItems": [
+				"dagger|phb",
+				"longbow|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW",
+				"RNG"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/FleeMortals/Fluff/Goblin%20Sniper.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Adult Basilisk",
+			"source": "4thage",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 6,
+			"wis": 14,
+			"cha": 15,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"petrified",
+				"poisoned"
+			],
+			"cr": {
+				"cr": "7",
+				"lair": "11"
+			},
+			"trait": [
+				{
+					"name": "Alchemical Ingredients",
+					"entries": [
+						"After the basilisk dies, a creature can make a {@dc 14} Wisdom ({@skill Medicine}) check using an herbalism kit and the basilisk's gullet, destroying the gullet in the process. On a success, the creature creates three doses of a salve. One dose of this salve can be applied to a {@condition petrified} creature as an action, and 1 minute after the salve is applied, the {@condition petrified} condition ends for that creature."
+					]
+				},
+				{
+					"name": "Toxic Ichor",
+					"entries": [
+						"A creature who deals piercing or slashing damage to the basilisk while within 5 feet of them takes 2 ({@damage 2d4}) poison damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The basilisk uses Petrifying Eye Beams and makes one Bite attack or uses Poison Fumes, if available."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 7 ({@damage 3d4}) poison damage."
+					]
+				},
+				{
+					"name": "Petrifying Eye Beams",
+					"entries": [
+						"The basilisk targets one or two creatures they can see within 30 feet of them. Each target must succeed on a {@dc 14} Constitution saving throw or be {@condition restrained} as they magically begin to turn to stone. Until the end of the {@condition restrained} creature's next turn, they or an ally within 5 feet of them can use an action to cut the encroaching stone from the {@condition restrained} creature's body using a weapon that deals slashing damage. When they do, the {@condition restrained} creature takes 20 ({@damage 3d12}) slashing damage, which can't be reduced in any way, and they are no longer {@condition restrained}.",
+						"A creature {@condition restrained} in this way must repeat the saving throw at the end of their turn. On a successful save, the effect ends. On a failed save, this creature is {@condition petrified} until freed by a {@psionic cure ailment|TalPsi} power of 4th order or higher, a {@spell greater restoration} spell, or a similar supernatural effect."
+					]
+				},
+				{
+					"name": "Poison Fumes {@recharge 4}",
+					"entries": [
+						"The basilisk exhales poisonous fumes in a 15-foot cone. Each creature in this area must make a {@dc 14} Constitution saving throw, taking 17 ({@damage 7d4}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Poison Splash",
+					"entries": [
+						"When the basilisk takes piercing or slashing damage, their wound spews poison. Each creature within 10 feet of the basilisk must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} for 1 minute (save ends at end of turn)."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Basilisk.png"
+			},
+			"foundryTokenScale": 1.2,
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"petrified",
+				"poisoned",
+				"restrained"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/FleeMortals/Fluff/Basilisk.webp"
+						}
+					}
+				]
+			},
+			"shortName": "basilisk",
+			"save": {
+				"str": "+9",
+				"con": "+8"
+			},
+			"skill": {
+				"intimidation": "+6",
+				"perception": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"preNote": "Non-magical"
+				},
+				{
+					"resist": [
+						"acid",
+						"necrotic",
+						"poison"
+					]
+				}
+			],
+			"dragonCastingColor": "green",
+			"dragonAge": "adult",
+			"legendaryGroup": {
+				"name": "Basilisk",
+				"source": "4thage"
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Giant Gargoyle",
+			"source": "4thage",
+			"page": 140,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "9d8 + 45"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 19,
+			"dex": 15,
+			"con": 20,
+			"int": 6,
+			"wis": 12,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Terran"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the gargoyle remains motionless, it is indistinguishable from an inanimate statue."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The gargoyle makes two attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "http://127.0.0.1:5000/audio/bestiary/gargoyle.mp3"
+			},
+			"traitTags": [
+				"False Appearance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Gargoyle",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Gargoyle",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of elemental earth that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.",
+									{
+										"name": "Animate Stone",
+										"type": "entries",
+										"entries": [
+											"Gargoyles cling to rocky cliffs and mountains, or roost on ledges in underground caves. They haunt city rooftops, perching vulture-like among the high stone arches and buttresses of castles and cathedrals, and they can hold themselves so still that they appear inanimate. Able to maintain this state for years, a gargoyle makes an ideal sentry."
+										]
+									},
+									{
+										"name": "Deadly Reputation",
+										"type": "entries",
+										"entries": [
+											"Gargoyles have a reputation for cruelty. Statues carved into the likenesses of gargoyles appear in the architecture of countless cultures to frighten away trespassers. Although such sculptures are only decorative, real gargoyles can hide among them to ambush unsuspecting victims. A gargoyle might alleviate the tedium of its watch by catching and tormenting birds or rodents, but its long wait only increases its craving for harming sentient creatures."
+										]
+									},
+									{
+										"name": "Cruel Servants",
+										"type": "entries",
+										"entries": [
+											"Gargoyles are easily inspired by the cunning of an intelligent master. They enjoy simple tasks such as guarding a master's home, torturing and killing interlopers, and anything else that involves minimum effort and maximum pain and carnage.",
+											"Gargoyles sometimes serve demons for their propensity for wanton chaos and destruction. Powerful spellcasters can also easily enlist gargoyle guardians to keep watch over their gates and walls. Gargoyles have the patience and fortitude of stone, and will serve even the cruelest master for years without complaint."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Elemental Nature",
+										"entries": [
+											"A gargoyle doesn't require air, food, drink, or sleep."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Shards of Elemental Evil",
+										"entries": [
+											"As Ogrémoch, the evil Prince of Elemental Earth, treads his stony realm, it leaves shards of broken rock in his wake. Imbued with slivers of sentience, these shards thrum with the essence of the elemental prince, growing over long years into vaguely humanoid rock formations that resolve at last into the hard, cruel shapes of gargoyles.",
+											"Ogrémoch doesn't create gargoyles deliberately, but they are a physical manifestation of his evil. Gargoyles are mockeries of the elemental air that Ogrémoch despises. They are heavy creatures of living stone, yet capable of flight. Like their creator, they possess a fundamental hatred for beings of elemental air, aarakocra in particular, and relish every opportunity to destroy such creatures.",
+											"On their home plane, gargoyles carve out earth motes that Ogrémoch hurtles into Aaqa, the domain of the aarakocra and the benevolent Wind Dukes the bird folk serve in the Elemental Plane of Air."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Gargoyle.webp"
+						}
+					}
+				]
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Minotaur",
+			"source": "4thage",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Skirmisher"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "18d10 + 126",
+				"average": 225
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 22,
+			"dex": 20,
+			"con": 24,
+			"int": 10,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"athletics": "+14",
+				"perception": "+10",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 120ft."
+			],
+			"passive": 20,
+			"languages": [
+				"Common"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Dizzying Gore",
+					"entries": [
+						"If the minotaur moves at least 40 feet straight toward a Large or smaller creature and then hits the creature with a Goring Horns attack on the same turn, that target must succeed on a {@dc 16} Constitution saving throw or be {@condition dazed|FleeMortals} until the start of the minotaur's next turn."
+					]
+				},
+				{
+					"name": "Minotaur Senses",
+					"entries": [
+						"The minotaur always knows which way is north and can't become lost. Due to his keen sense, he also senses any virgins in the labyrinth."
+					]
+				},
+				{
+					"name": "Lord of the Labyrinth",
+					"entries": [
+						"While in the Labyrinth, the Minotaur has advantage on stealth checks, and cannot be slowed down by difficult terrain or squeezing. "
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the minotaur fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Covardly",
+					"entries": [
+						"The minotaur has disadvantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The minotaur makes two Greatsword attacks or one Goring Horns attack and one Greatsword attack."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}23 ({@damage 4d8 + 5}) slashing damage. If the target is Large or smaller, the minotaur can push the target 5 feet away."
+					]
+				},
+				{
+					"name": "Goring Horns",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Retaliatory Gore",
+					"entries": [
+						"When a creature the minotaur can see within 40 feet of them deals damage to the minotaur, the minotaur can move up to their speed. If the minotaur ends this movement within 5 feet of that creature, the minotaur can make a Goring Horns attack against them."
+					]
+				},
+				{
+					"name": "Picaboo",
+					"entries": [
+						"When a creature enters the minotaur's range while the minotaur is hidden, the minotaur can make an Greatsword attack against them."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Minotaur.png"
+			},
+			"foundryTokenScale": 1.5,
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"dazed|fleemortals",
+				"frightened"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/FleeMortals/Fluff/Minotaur.webp"
+						}
+					}
+				]
+			},
+			"legendaryGroup": {
+				"name": "Asterion",
+				"source": "4thage"
+			},
+			"legendary": [
+				{
+					"name": "Come and Find Me",
+					"entries": [
+						"The minotaur moves up to it's speed, and tries to hide."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The minotaur makes a greatsword or horn attack."
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"The minotaur targets one creature it can see within 30 feet of it. If the target can see and hear him, the target must make a {@dc 16} Wisdom saving throw, or be {@condition frightened} of him until the end of its turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Reckless"
+			],
+			"save": {
+				"str": "+10",
+				"wis": "+6"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Silhouette Demon",
+			"lairActions": [
+				"When fighting inside its lair, the Silhouette Demon can take lair actions. On initiative count 20 (losing initiative ties), Silhouette Demon takes a lair action to cause one of the following effects.",
+				{
+					"type": "list",
+					"items": [
+						"The demon targets two creatures or objects it can see within 120 feet of it, and the darkness around them form chains to capture them. The targets must succeed on a {@dc 21} {@skill Athletics} saving throw, or be restrained. While maintaining {@status concentration}, the demon cannot take other lair actions.",
+						"Summon two {@creature Shadow Puppet|4thage}, or one {@creature Shadow Beast|4thage}"
+					]
+				}
+			],
+			"regionalEffects": [],
+			"mythicEncounter": [],
+			"source": "4thage"
+		},
+		{
+			"name": "Basilisk",
+			"lairActions": [
+				"When fighting inside its lair, an basilisk can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the basilisk takes a lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The basilisk casts {@spell Elemental Bane} (with poison as the damage type).",
+						"The basilisk grabs a petrified creature, and swallows it whole. It regains 20 hit points, and recharges its Poison Fumes."
+					]
+				}
+			],
+			"regionalEffects": [
+				"The region containing an baslisk's lair is warped by the creature's presence, which creates one or more of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Water sources within 300 feet of the basilisk's lair are laced with poison. Enemies of the basilisk that drink such water vomit it within minutes."
+					]
+				},
+				"If the basilisk dies, the first two effects fade over the course of {@dice 2d6} days."
+			],
+			"mythicEncounter": [],
+			"source": "4thage"
+		},
+		{
+			"name": "Asterion",
+			"lairActions": [
+				"On initiative count 20, Asterion may use one of the following actions:",
+				"- Feast on the Innocent. Asterion grabs the corpse of a creature which was alive in the last 20 minutes, and stuffs it into his face. He regains 4d6+6 hitpoints.",
+				"- Labyrinth of Daedalus. The walls move, closing 3 5*5 square areas, and open up the ones previously obstructed with this feature."
+			],
+			"regionalEffects": [],
+			"mythicEncounter": [],
+			"source": "4thage"
+		}
+	],
+	"item": [
+		{
+			"name": "Sword of Theseus",
+			"source": "4thage",
+			"page": 27,
+			"baseItem": "longsword|PHB",
+			"type": "M|PHB",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"sentient": true,
+			"weight": 5,
+			"weaponCategory": "martial",
+			"property": [
+				"V|PHB",
+				"F|PHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"critThreshold": 19,
+			"entries": [
+				"Theseus was a failure of a hero, not managing to kill the Minotaur (he was stuck in a 5*5 square corner of the labyrinth, and suffocated). Traitor to his fate to kill the monster, the sword imbued with the mad soul of the late Theseus seethes with excitement at the slightest opportunity to draw blood.",
+				{
+					"type": "entries",
+					"name": "Adjustable",
+					"entries": [
+						"The sword wants to fight in any circumstances. If a creature or construct picks it up, the sword adjusts it's size to accommodate his wielder."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bloodthirst",
+					"entries": [
+						"The sword thirsts for blood. If the sword doesn't taste blood on its blade within 1 minute of being drawn from its scabbard, its wielder makes a {@dc 15} Charisma saving throw. On a successful save, the wielder takes {@damage 3d6} Psychic damage. On a failed save, the wielder is dominated by the sword, as if by the {@spell Dominate Monster|PHB} spell, and the sword demands blood. The spell effect ends when the sword's demand is met."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic Weapon",
+					"entries": [
+						"You gain a +1 bonus to attack rolls and damage rolls made with the sword."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Off with your head!",
+					"entries": [
+						"While wielding this weapon, you score a {@variantrule Critical Hit|PHB} on a roll of 19 or 20 on the {@dice d20} and deals an extra {@damage 2d10} Slashing damage to Humanoids."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spirit of Theseus",
+					"entries": [
+						"While the sword is on your person, you gain the following benefits:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Battle Hunger",
+									"entries": [
+										"You add {@dice 1d10} to your {@variantrule Initiative|PHB} rolls."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Blade of Defense",
+									"entries": [
+										"When you take an action to attack with the sword, you can transfer some or all of its attack bonus to your {@variantrule Armor Class|PHB} instead. The adjusted bonuses remain in effect until the start of your next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Necrotic Resistance",
+									"entries": [
+										"You have {@variantrule Resistance|PHB} to Necrotic damage."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"The Sword of Theseus is a sentient Lawful Evil weapon with an Intelligence of 18, a Wisdom of 14, and a Charisma of 20. It has hearing and {@sense Tremmorsense|PHB} out to 120 feet.",
+						"The weapon communicates telepathically with its wielder and speaks Common, Abyssal, and can cast {@spell Beast Speech|PHB} at will."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"The Sword of Theseus is mad after failing his master. He seeks to hurt everyone else, like the Gods hurt him by failing his master in his conquest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cursed",
+					"entries": [
+						"This item is cursed. Attuning to it curses you until you are targeted by a {@spell Remove Curse|PHB} or similar magic. As long as you remain cursed, you cannot discard the stone, which immediately teleports back in your hand or pack."
+					]
+				}
+			]
+		}
+	],
+	"language": [
+		{
+			"name": "Shadow Common",
+			"source": "4thage",
+			"type": "standard",
+			"scirpt": "shadow",
+			"entries": [
+				"The shared language spoken under {@deity Primordial of Earth|Shadow|4thage|The Moon} "
+			]
+		}
+	],
+	"deity": [
+		{
+			"name": "Primordial of Earth",
+			"source": "4thage",
+			"pantheon": "Shadow",
+			"symbol": "a black splash with a dark silver circle in the middle",
+			"title": "The Moon",
+			"category": "Primordial"
+		}
+	]
+}

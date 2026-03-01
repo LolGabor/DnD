@@ -1,0 +1,207 @@
+{
+    "_meta": {
+    "sources": [
+        {
+        "json": "Ryian",
+        "full": "Ryian  ",
+        "abbreviation": "Ryian",
+        "color": "92b233",
+        "authors": [
+            "Vi"
+        ],
+        "convertedBy": [
+            "Diebor"
+        ],
+        "dateReleased": "2026-02-28",
+        "version": "1.0"
+        }
+    ],
+    "edition": "classic",
+    "status": "ready",
+    "dateAdded": 1729973698,
+    "dateLastModified": 1757175607
+    },
+    "subclass": [
+        {
+            "name": "World Soul",
+            "source": "Ryian",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "shortName": "World",
+            "subclassFeatures": [
+                "World Soul Spells|Warlock|PHB|World|Ryian|1|1",
+                "Wings of Balance|Warlock|PHB|World|Ryian|1|1",
+                "Conduit of Balance|Warlock|PHB|World|Ryian|6|1",
+                "Scales of Powers|Warlock|PHB|World|Ryian|10|1",
+                "Surprise!|Warlock|PHB|World|Ryian|14|1"
+            ],
+			"subclassSpells": [
+				"Cure Wounds",
+				"Wound Transference",
+				"Inflict Wounds",
+				"Lesser Restoration",
+				"Conditional Strike",
+				"Blindness/Deafness",
+				"Mass Healing Word",
+				"Life Siphon",
+				"Fireball",
+				"Aura of Purity",
+				"Aura of Balance",
+				"Sickening Radiance",
+				"Mass Cure Wounds",
+				"Circle of Life",
+				"Destructive Wave"
+			],
+			"additionalSpells": [
+				{
+					"expanded":{
+						"1": [
+                            "Cure Wounds",
+                            "Wound Transference",
+                            "Inflict Wounds"
+						],
+						"2": [
+                            "Lesser Restoration",
+                            "Conditional Strike",
+                            "Blindness/Deafness"
+						],
+						"3": [
+                            "Mass Healing Word",
+                            "Life Siphon",
+                            "Fireball"
+						],
+						"4": [
+                            "Aura of Purity",
+                            "Aura of Balance",
+                            "Sickening Radiance"
+						],
+						"5": [
+                            "Mass Cure Wounds",
+                            "Circle of Life",
+                            "Destructive Wave"
+						]
+					}
+				}
+			]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "World Soul Spells",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ryian",
+            "level": 1,
+            "entries": [
+                "As you level up, the World Soul flows through you; when you reach a Warlock level specified in the World Soul Spells table, you thereafter always have the listed spells listed",
+                {
+                    "type": "table",
+                    "caption": "World Soul Spells",
+                    "colLabels": [
+                        "Warlock Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "{@spell Cure Wounds|PHB}, {@spell Wound Transference|Ryian}*, {@spell Inflict Wounds|PHB}"
+                        ],
+                        [
+                            "3",
+                            "{@spell Lesser Restoration|PHB}, {@spell Conditional Strike|Ryian}*, {@spell Blindness/Deafness|PHB}"
+                        ],
+                        [
+                            "5",
+                            "{@spell Mass Healing Word|PHB}, {@spell Life Siphon|Ryian}*, {@spell Fireball|PHB}"
+                        ],
+                        [
+                            "7",
+                            "{@spell Aura of Purity|PHB}, {@spell Aura of Balance|Ryian}*, {@spell Sickening Radiance|XGE}"
+                        ],
+                        [
+                            "9",
+                            "{@spell Mass Cure Wounds|PHB}, {@spell Circle of Life|Ryian}*, {@spell Destructive Wave|PHB}"
+                        ]
+                    ]
+                },
+                "*These spells can only be used if the world is in balance"
+            ]
+        },
+        {
+            "name": "Wings of Balance",
+            "source": "Ryian",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ryian",
+            "level": 1,
+            "entries": [
+                "At first level, you gain the ability to check on the balance of the world and gain benefits in accordance with where the scales land. In order to do so, you can sprout out spectral wings, which colour would change depending on the world balance. ",
+                "Radiant white for good, as close to what it'd look like if your race had wings for natural and midnight black for evil.",
+                {
+                    "type":"table",
+                    "caption": "Morality Powers",
+                    "colLabels": [
+                        "World Status",
+                        "Benefit"
+                    ],
+                    "rows": [
+                        [
+                            "Too much good",
+                            "Any healing for any additional {@dice 1d4} + your warlock level."
+                        ],
+                        [
+                            "Too much evil",
+                            "Any damaging spells deal an additional {@damage 1d6} + your warlock level. One instance of damage per spell"
+                        ],
+                        [
+                            "Balance is kept",
+                            "You gain both benefits and you choose to empower one, gaining double benefits until the start of your next turn. This feature can be used once per short or long rest."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Conduit of Balance",
+            "source": "Ryian",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ryian",
+            "level": 6,
+            "entries": [
+                "   "
+            ]
+        },
+        {
+            "name": "Scales of Powers",
+            "source": "Ryian",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ryian",
+            "level": 10,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Surprise!",
+            "source": "Ryian",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ryian",
+            "level": 14,
+            "entries": [
+                "Nyah and Neon will come up with something fun."
+            ]
+        }
+    ]
+}

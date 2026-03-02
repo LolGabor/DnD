@@ -2138,6 +2138,152 @@
 				"constitution",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Kraken Companion",
+			"source": "4thage",
+			"page": 49,
+			"summonedScaleByPlayerLevel": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Companion"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "11 + eleven times caregiver's level (number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 22,
+			"int": 18,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"con": "+6 plus PB",
+				"int": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+3 plus PB",
+				"perception": "+2 plus PB",
+				"arcana": "+2 plus PB"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"pbNote": "equals the caregiver's bonus",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Kraken can breathe air and water"
+					]
+				},
+				{
+					"name": "Supernatural Resistance",
+					"entries": [
+						"The Kraken has advantage on saving throws against powers, spells, and supernatural effects"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Signature Attack (Tentacle)",
+					"entries": [
+						"{@atk mw} {@hit 3 plus PB} to hit, reach 10 ft., one target. {@h}{@damage 1d10 plus PB} bludgeoning damage."
+					]
+				},
+				{
+					"name": "1st Level: Tentacle (2 Ferocity)",
+					"entries": [
+						"The kraken makes a signature attack. On a hit, the target is grappled (escape {@dc 13 plus PB}). The kraken has {@damage 3 plus PB} large enough tentacles to grapple, each of which can restrain one target."
+					]
+				},
+				{
+					"name": "5th Level: Psychic Rend (5 Ferocity)",
+					"entries": [
+						"{@atk rs} {@hit 4 plus PB} to hit, range 120 ft., one creature. {@damage PBd8} psychic damage, and the target is {@condition frightened} of the kraken until the start of the kraken's next turn."
+					]
+				},
+				{
+					"name": "9th Level: Tentacle Tantrum (8 Ferocity)",
+					"entries": [
+						"The kraken makes PB attacks with their signature attack. On hit, the target is launched 10 feet from the kraken, taking {@damage 1d10 plus PB} bludgeoning damage on landing."
+					]
+				},
+				{
+					"name": "13th Level: Telepathic Wail (16 Ferocity)",
+					"entries": [
+						"The kraken telepathically screams in the mind of each enemy within 40 feet of them. Each target must make a {@dc 14 plus PB} Constitution saving throw. On a failed save, a target takes {@damage (2*PB)d8} psychic damage and can't concentrate on powers or spells until the end of the kraken's next turn. On a failed save, the target takes half damage and suffers no other ill effect.",
+						"At the start of their next turn, the kraken can use 8 Ferocity to continue crying, repeating the action."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Telekinetic Fling",
+					"entries": [
+						"The Kraken throws a creature they are grappling into an unoccupied space the Kraken can see within 40 feet of them. The target lands prone and takes {@damage 1d10 + PB} bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "5th level: Psychic Inkshot (Recharges after Short Rest)",
+					"entries": [
+						"When an enemy the kraken can see moves with 5 feet of the caregiver, the kraken shoots a psionically charged ink at the creature. They must make a {@dc 14 + PB} Wisdom saving throw, or be blinded and dazed until the end of its next turn."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Basilisk.png"
+			},
+			"foundryTokenScale": 1.2,
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"restrained",
+				"blinded",
+				"dazed"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/FleeMortals/Fluff/Basilisk.webp"
+						},
+						"width": 841,
+						"height": 986
+					}
+				]
+			}
 		}
 	],
 	"legendaryGroup": [
@@ -2311,7 +2457,20 @@
 			"type": "standard",
 			"scirpt": "shadow",
 			"entries": [
-				"The shared language spoken under {@deity Primordial of Earth|Shadow|4thage|The Moon} "
+				"The shared language spoken under {@deity Primordial of Earth|Shadow|4thage|The Moon} is soft, lilting, and almost melodic. It's commonly used for interspecies communication in areas of darkness, but unlike {@language Common}, it isn't used in private situations, unless absolutely necessary."
+			]
+		},
+		{
+			"name": "Auwin",
+			"source": "4thage",
+			"page": 0,
+			"type": "exotic",
+			"script": "shadow, elvish",
+			"typicalSpeakers": [
+				"shadow elves"
+			],
+			"entries": [
+				"Auwin is similar to elvish in vocabular, but pronounciation and rythm are completely different. While elvish is extremely fluid, the auwin language uses a strong staccato and often doesn't practice tonality."
 			]
 		}
 	],
@@ -2320,9 +2479,30 @@
 			"name": "Primordial of Earth",
 			"source": "4thage",
 			"pantheon": "Shadow",
-			"symbol": "a black splash with a dark silver circle in the middle",
+			"symbol": "a black splash with a dark silver circle in the middle / a silver disk",
 			"title": "The Moon",
 			"category": "Primordial"
+		},
+		{
+			"name": "Primordial of Darkness",
+			"source": "4thage",
+			"title": "Stormbringer",
+			"category": "Primordial",
+			"pantheon": "Shadow",
+			"symbol": "an obsidian pearl"
+		},
+		{
+			"name": "Primordial of Water",
+			"source": "4thage",
+			"page": 0,
+			"title": "Father of Elves",
+			"province": "",
+			"altNames":[
+				""
+			],
+			"category": "Primordial",
+			"pantheon": "elven",
+			"symbol": "a droplet shaped prism"
 		}
 	]
 }

@@ -1,0 +1,430 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Ry",
+                "full": "Ryian",
+                "abbreviation": "Rya",
+                "color": "92b233",
+                "authors": ["Vi"],
+                "convertedBy": ["Diebor"],
+                "version": "1.0"
+            }
+        ],
+        "edition": "classic",
+        "dateAdded": 1729973698,
+        "dateLastModified": 1757175607
+    },
+    "subclass": [
+        {
+            "name": "World Soul",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassSource":"Ry",
+            "shortName": "World",
+            "subclassSpells": [
+                    "Cure Wounds",
+                    "Wound Transference|Ry",
+                    "Inflict Wounds",
+                    "Lesser Restoration",
+                    "Conditional Strike|Ry",
+                    "Blindness/Deafness",
+                    "Mass Healing Word",
+                    "Life Siphon|Ry",
+                    "Fireball",
+                    "Aura of Purity",
+                    "Aura of Balance|Ry",
+                    "Sickening Radiance",
+                    "Mass Cure Wounds",
+                    "Circle of Life|Ry",
+                    "Destructive Wave"
+            ],
+			"additionalSpells": [
+				{
+					"expanded":{
+						"1": [
+                            "Cure Wounds",
+                            "Wound Transference|Ry",
+                            "Inflict Wounds"
+                        ],
+						"2": [
+                            "Lesser Restoration",
+                            "Conditional Strike|Ry",
+                            "Blindness/Deafness"
+						],
+						"3": [
+                            "Mass Healing Word",
+                            "Life Siphon|Ry",
+                            "Fireball"
+                        ],
+						"4": [
+                            "Aura of Purity",
+                            "Aura of Balance|Ry",
+                            "Sickening Radiance"
+						],
+						"5": [
+                            "Mass Cure Wounds",
+                            "Circle of Life|Ry",
+                            "Destructive Wave"
+						]
+					}
+				}
+			],
+            "subclassFeatures": [
+                "World Soul Spells|Warlock|PHB|World|Ry|1|1",
+                "Wings of Balance|Warlock|PHB|World|Ry|1|2",
+                "Conduit of Balance|Warlock|PHB|World|Ry|6|1",
+                "Scales of Powers|Warlock|PHB|World|Ry|10|1",
+                "Surprise!|Warlock|PHB|World|Ry|14|1"
+            ] 
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "World Soul Spells",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ry",
+            "level": 1,
+            "entries": [
+                "The World Soul flows through you, you always have these spells prepared, and they don't count against your spells known.",
+                {
+                    "type": "table",
+                    "caption": "World Soul Spells",
+                    "colLabels": ["Warlock Level", "Spells"],
+                    "colStyles": ["col-2 text-center", "col-10"],
+                    "rows": [
+                        ["1", "{@spell Cure Wounds}, {@spell Wound Transference|Ry}, {@spell Inflict Wounds}"],
+                        ["3", "{@spell Lesser Restoration}, {@spell Conditional Strike|Ry}, {@spell Blindness/Deafness}"],
+                        ["5", "{@spell Mass Healing Word}, {@spell Life Siphon|Ry}, {@spell Fireball}"],
+                        ["7", "{@spell Aura of Purity}, {@spell Aura of Balance|Ry}, {@spell Sickening Radiance}"],
+                        ["9", "{@spell Mass Cure Wounds}, {@spell Circle of Life|Ry}, {@spell Destructive Wave}"]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wings of Balance",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ry",
+            "level": 1,
+            "entries": [
+                "At first level, you gain the ability to check on the balance of the world and gain benefits in accordance with where the scales land. In order to do so, you can sprout out spectral wings, which colour would change depending on the world balance. ",
+                "Radiant white for good, as close to what it'd look like if your race had wings for natural and midnight black for evil.",
+                {
+                    "type":"table",
+                    "caption": "Morality Powers",
+                    "colLabels": [
+                        "World Status",
+                        "Benefit"
+                    ],
+                    "rows": [
+                        [
+                            "Too much good",
+                            "Any healing for any additional {@dice 1d4} + your warlock level."
+                        ],
+                        [
+                            "Too much evil",
+                            "Any damaging spells deal an additional {@damage 1d6} + your warlock level. One instance of damage per spell"
+                        ],
+                        [
+                            "Balance is kept",
+                            "You gain both benefits and you choose to empower one, gaining double benefits until the start of your next turn. This feature can be used once per short or long rest."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Conduit of Balance",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ry",
+            "level": 6,
+            "entries": [
+                "under development due to my laziness"
+            ]
+        },
+        {
+            "name": "Scales of Powers",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ry",
+            "level": 10,
+            "entries": [
+                "too tired to write it down right now"
+            ]
+        },
+        {
+            "name": "Surprise!",
+            "source": "Ry",
+            "className": "Warlock",
+            "classSource": "PHB",
+            "subclassShortName": "World",
+            "subclassSource": "Ry",
+            "level": 14,
+            "entries": [
+                "Nyah and Neon will come up with something fun."
+            ]
+        }
+    ],
+    "spell":[
+        {
+            "name":"Wound Transference",
+            "level":1,
+            "school":"N",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"touch"
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You touch a creature, inflicting {@damage 4d6} points of necrotic damage. Half of the damage you deal, you absorb and are able to heal yourself or another creature within 30 feet for such an amount."
+            ],
+            "source":"Ry",
+            "page":1,
+            "components":{
+                "s":true,
+                "v": true,
+                "m": "a balanced material plane, which the spell consumes"
+            },
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 2d6} for each spell slot level above 1"
+                    ]
+                }
+            ],
+            "damageInflict":[
+                "necrotic"
+            ]
+        },
+        {
+            "name":"Conditional Strike",
+            "level":2,
+            "school":"T",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"point",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You target an enemy and an ally. Every condition on said ally is transferred onto the enemy, unless it succeeds on a Constitution saving throw. For every condition, apart from unconscious, the enemy takes {@damage 2d8} force damage from the violent transfer and the ally heals for the same amount."
+            ],
+            "source":"Ry",
+            "page":1,
+            "components":{
+                "v": true,
+                "s": true,
+                "m": "a balanced material plane, which the spell consumes"
+            }
+        },
+        {
+            "name":"Life Siphon",
+            "level":3,
+            "school":"V",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"point",
+                "distance":{
+                    "type":"feet",
+                    "amount":120
+                }
+            },
+            "duration":[
+                {
+                    "type":"timed",
+                    "duration": {
+                        "type":"minute",
+                        "amount":1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You form a 20ft sphere within a space you can see which proceeds to suck the life out of anyone caught within it. Any creature that starts or ends its turn within the sphere, must make a CON save or suffer {@damage 4d10} necrotic damage. Creatures hit by this ability cannot heal or be healed until the start of their next turn.",
+                "Half of this damage can then be distributed as you see fit to allies within 60 feet of you."
+            ],
+            "source":"Ry",
+            "page":1,
+            "components":{
+                "v": true,
+                "s": true,
+                "m":"a balanced material plane, which the spell consumes"
+            },
+            "damageInflict": [
+                "necrotic"
+            ],
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 1d6} for each spell slot level above 3"
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Aura of Balance",
+            "level":4,
+            "school":"A",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"point",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"timed",
+                    "duration": {
+                        "type":"minute",
+                        "amount":1,
+                        "upTo": true
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "You create an aura that extends 10 feet for the duration around yourself or an ally that hurts the wicked and protects those who fight against such things. When an enemy starts or ends its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} necrotic or radiant damage (your choice), or half as much on a successful one. Half the damage dealt will then be used as a shield for the righteous as temporary hit points that last for one round. A creature can willing fail this saving throw."
+            ],
+            "source":"Ry",
+            "page":1,
+            "components":{
+                "v": true,
+                "s": true,
+                "m": "a balanced material plane, which the spell consumes"
+            },
+            "entriesHigherLevel":[
+                {
+                    "type":"entries",
+                    "name":"At Higher Levels",
+                    "entries":[
+                        "The damage increases by {@damage 1d8} for each spell slot level above 4"
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Circle of Life",
+            "level":5,
+            "school":"V",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"cone",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "something something"
+            ],
+            "source":"Ry",
+            "page":1,
+            "components":{
+                "v": true,
+                "s": true,
+                "m": "a balanced material plane, which the spell consumes"
+            }
+        }
+    ]
+}

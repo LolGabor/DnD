@@ -604,7 +604,7 @@
             "type": "P",
             "rarity": "Uncommon",
             "entries": [
-                "When you drink this potion, you gain the effect of {@spell Armor of Agathyst} as if it was cast at 2nd level.",
+                "When you drink this potion, you gain the effect of {@spell Armor of Agathys} as if it was cast at 2nd level.",
                 "This potions container seems to hold a tiny cloud inside"
             ],
             "fluff": {
@@ -613,7 +613,17 @@
                 ]
             },
             "attachedSpells":[
-                "armor of agathyst"
+                "armor of agathys"
+            ]
+        },
+        {
+            "name": "",
+            "source": "",
+            "page": "",
+            "type": "",
+            "rarity": "none",
+            "entries": [
+                ""
             ]
         }
     ]

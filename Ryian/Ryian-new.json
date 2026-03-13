@@ -513,6 +513,86 @@
                 "s":true,
                 "m": "a balanced material plane, which the spell consumes"
             }
+        },
+        {
+            "name":"Keeli's Prismatic Barrage",
+            "level":"3",
+            "school":"V",
+            "time":[
+                {
+                    "number":1,
+                    "unit":"action"
+                }
+            ],
+            "range":{
+                "type":"cone",
+                "distance":{
+                    "type":"feet",
+                    "amount":60
+                }
+            },
+            "duration":[
+                {
+                    "type":"instant"
+                }
+            ],
+            "classes":{
+                "fromClassList":[
+                    {
+                        "name":"Wizard",
+                        "source":"PHB"
+                    }
+                ]
+            },
+            "entries":[
+                "Six multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 30-foot cone must make a Dexterity saving throw. For each target, roll a {@dice 1d6} to determine which color ray affects it.",
+                {
+                    "type": "table",
+                    "page": 0,
+                    "colLabels": [
+                        "d6",
+                        "Color",
+                        "Ray Effect"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "Red",
+                            "The target takes {@dice 4d6} fire damage on a failed save, or half as much on a successful one."
+                        ],
+                        [
+                            "2",
+                            "Yellow",
+                            "The target takes {@dice 4d6} lightning damage on a failed save, or half as much on a successful one."
+                        ],
+                        [
+                            "3",
+                            "Green",
+                            "The target takes {@dice 4d6} poison damage on a failed save, or half as much on a successful one."
+                        ],
+                        [
+                            "4",
+                            "Indigo",
+                            "On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind."
+                        ],
+                        [
+                            "5",
+                            "Violet",
+                            "On a failed save, the target is {@condition blinded}. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. They reappear after 1d4 turns to the spot closest to their original position."
+                        ],
+                        [
+                            "6",
+                            "Special",
+                            "The target is struck by two rays. Roll twice more, rerolling any 6."
+                        ]
+                    ]
+                }
+            ],
+            "source":"Ryian",
+            "components":{
+                "v":true,
+                "s":true
+            }
         }
     ]
 }

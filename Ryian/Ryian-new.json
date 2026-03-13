@@ -24,6 +24,7 @@
 			"source":"Ryian",
 			"className":"Warlock",
 			"classSource":"PHB",
+            "page":"19",
 			"shortName":"WorldSoul",
 			"subclassSpells": [
 				"Cure Wounds",
@@ -593,6 +594,27 @@
                 "v":true,
                 "s":true
             }
+        }
+    ],
+    "item":[
+        {
+            "name": "Rimeskin Potion",
+            "source": "Ryian",
+            "page": "4",
+            "type": "P",
+            "rarity": "Uncommon",
+            "entries": [
+                "When you drink this potion, you gain the effect of {@spell Armor of Agathyst} as if it was cast at 2nd level.",
+                "This potions container seems to hold a tiny cloud inside"
+            ],
+            "fluff": {
+                "entries": [
+                    "We got these off the cult leader dude in session 4."
+                ]
+            },
+            "attachedSpells":[
+                "armor of agathyst"
+            ]
         }
     ]
 }

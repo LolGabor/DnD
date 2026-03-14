@@ -24,7 +24,7 @@
 			"source":"Ryian",
 			"className":"Warlock",
 			"classSource":"PHB",
-            "page":"19",
+			"page":"19",
 			"shortName":"WorldSoul",
 			"subclassSpells": [
 				"Cure Wounds",
@@ -47,29 +47,29 @@
 				{
 					"prepared":{
 						"1": [
-                            "Cure Wounds",
-                            "Wound Transference|Ryian",
-                            "Inflict Wounds"
+							"Cure Wounds",
+							"Wound Transference|Ryian",
+							"Inflict Wounds"
 						],
 						"2": [
-                            "Lesser Restoration",
-                            "Conditional Strike|Ryian",
-                            "Blindness/Deafness"
+							"Lesser Restoration",
+							"Conditional Strike|Ryian",
+							"Blindness/Deafness"
 						],
 						"3": [
-                            "Mass Healing Word",
-                            "Life Siphon|Ryian",
-                            "Fireball"
+							"Mass Healing Word",
+							"Life Siphon|Ryian",
+							"Fireball"
 						],
 						"4": [
-                            "Aura of Purity",
-                            "Aura of Balance|Ryian",
-                            "Sickening Radiance|XGE"
+							"Aura of Purity",
+							"Aura of Balance|Ryian",
+							"Sickening Radiance|XGE"
 						],
 						"5": [
-                            "Mass Cure Wounds",
-                            "Circle of Life|Ryian",
-                            "Destructive Wave"
+							"Mass Cure Wounds",
+							"Circle of Life|Ryian",
+							"Destructive Wave"
 						]
 					}
 				}
@@ -102,35 +102,35 @@
 						"Warlock Level",
 						"Spells"
 					],
-                    "colStyles": [
-                        "col-2 text-center",
-                        "col-10"
-                    ],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
 					"intro": [
 						"The World Soul flows through you, you always have these spells prepared, and they don't count against your spells known."
 					],
 					"rows": [
-                        [
-                            "1",
-                            "{@spell Cure Wounds}, {@spell Wound Transference|Ryian} *, {@spell Inflict Wounds}"
-                        ],
-                        [
-                            "3",
-                            "{@spell Lesser Restoration}, {@spell Conditional Strike|Ryian} *, {@spell Blindness/Deafness}"
-                        ],
-                        [
-                            "5",
-                            "{@spell Mass Healing Word}, {@spell Life Siphon|Ryian} *, {@spell Fireball|PHB}"
-                        ],
-                        [
-                            "7",
-                            "{@spell Aura of Purity}, {@spell Aura of Balance|Ryian} *, {@spell Sickening Radiance|XGE}"
-                        ],
-                        [
-                            "9",
-                            "{@spell Mass Cure Wounds}, {@spell Circle of Life|Ryian} *, {@spell Destructive Wave}"
-                        ]
-                    ],
+						[
+							"1",
+							"{@spell Cure Wounds}, {@spell Wound Transference|Ryian} *, {@spell Inflict Wounds}"
+						],
+						[
+							"3",
+							"{@spell Lesser Restoration}, {@spell Conditional Strike|Ryian} *, {@spell Blindness/Deafness}"
+						],
+						[
+							"5",
+							"{@spell Mass Healing Word}, {@spell Life Siphon|Ryian} *, {@spell Fireball|PHB}"
+						],
+						[
+							"7",
+							"{@spell Aura of Purity}, {@spell Aura of Balance|Ryian} *, {@spell Sickening Radiance|XGE}"
+						],
+						[
+							"9",
+							"{@spell Mass Cure Wounds}, {@spell Circle of Life|Ryian} *, {@spell Destructive Wave}"
+						]
+					],
 					"footnotes": [
 						"*only when the world is in balance"
 					]
@@ -273,365 +273,397 @@
 			]
 		}
 	],
-    "spell":[
+	"spell":[
+		{
+			"name":"Wound Transference",
+			"level":"1",
+			"school":"N",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"touch"
+			},
+			"duration":[
+				{
+					"type":"instant"
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"You touch a creature, inflicting {@damage 4d6} points of necrotic damage. Half of the damage you deal, you absorb and are able to heal yourself or another creature within 30 feet for such an amount."
+			],
+			"source":"Ryian",
+			"components":{
+				"s":true,
+				"m": "a balanced material plane, which the spell consumes"
+			},
+			"entriesHigherLevel":[
+				{
+					"type":"entries",
+					"name":"At Higher Levels",
+					"entries":[
+						"The damage increases by {@damage 2d6} for each spell slot level above 1"
+					]
+				}
+			],
+			"damageInflict":[
+				"necrotic"
+			]
+		},
+		{
+			"name":"Conditional Strike",
+			"level":"2",
+			"school":"T",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"point",
+				"distance":{
+					"type":"feet",
+					"amount":60
+				}
+			},
+			"duration":[
+				{
+					"type":"instant"
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"You target an enemy and an ally. Every condition on said ally is transferred onto the enemy, unless it succeeds on a COnstitution saving throw. For every condition, apart from unconscious, the enemy takes {@damage 2d8} force damage from the violent transfer and the ally heals for the same amount."
+			],
+			"source":"Ryian",
+			"components":{
+				"s":true,
+				"v":true,
+				"m": "a balanced material plane, which the spell consumes"
+			}
+		},
+		{
+			"name":"Life Siphon",
+			"level":"3",
+			"school":"V",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"point",
+				"distance":{
+					"type":"feet",
+					"amount":120
+				}
+			},
+			"duration":[
+				{
+					"type":"timed",
+					"duration": {
+						"type":"minute",
+						"amount":1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"You form a 20ft sphere within a space you can see which proceeds to suck the life out of anyone caught within it. Any creature that starts or ends it's turn within the sphere, must make a CON save or suffer {@damage 4d10} necrotic damage.Creatures hit by this ability can not heal or be healed until the start of their next turn.",
+				"Half of this damage can then be distributed as you see fit to allies within 60 feet of you."
+			],
+			"source":"Ryian",
+			"components":{
+				"v":true,
+				"s":true,
+				"m":"a balanced material plane, which the spell consumes"
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"entriesHigherLevel":[
+				{
+					"type":"entries",
+					"name":"At Higher Levels",
+					"entries":[
+						"The damage increases by {@damage 1d6} for each spell slot level above 3"
+					]
+				}
+			]
+		},
+		{
+			"name":"Aura of Balance",
+			"level":"4",
+			"school":"A",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"point",
+				"distance":{
+					"type":"feet",
+					"amount":60
+				}
+			},
+			"duration":[
+				{
+					"type":"timed",
+					"duration": {
+						"type":"minute",
+						"amount":1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"You create an aura that extends 10 feet for the duration around yourself or an ally that hurts the wicked and protects those who fight against such things. When an enemy starts or ends its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} necrotic or radiant damage (your choice), or half as much on a successful one. Half the damage dealt will then be used as a shield for the righteous as temporary hit points that last for one round. A creature can willing fail this saving throw."
+			],
+			"source":"Ryian",
+			"components":{
+				"v":true,
+				"s":true,				
+				"m": "a balanced material plane, which the spell consumes"
+			},
+			"entriesHigherLevel":[
+				{
+					"type":"entries",
+					"name":"At Higher Levels",
+					"entries":[
+						"The damage increases by {@damage 1d8} for each spell slot level above 4"
+					]
+				}
+			]
+		},
+		{
+			"name":"Circle of Life",
+			"level":"5",
+			"school":"V",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"cone",
+				"distance":{
+					"type":"feet",
+					"amount":60
+				}
+			},
+			"duration":[
+				{
+					"type":"instant"
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"Each enemy creature within 40 feet cone suffers {@damage 8d8} radiant, fire, necrotic or cold damage or half damage upon a successful dexterity save. The total damage dealt is the healing that you are able to give out to allies within the cone."
+			],
+			"source":"Ryian",
+			"components":{
+				"v":true,
+				"s":true,
+				"m": "a balanced material plane, which the spell consumes"
+			}
+		},
+		{
+			"name":"Keeli's Prismatic Barrage",
+			"level":"3",
+			"school":"V",
+			"time":[
+				{
+					"number":1,
+					"unit":"action"
+				}
+			],
+			"range":{
+				"type":"cone",
+				"distance":{
+					"type":"feet",
+					"amount":60
+				}
+			},
+			"duration":[
+				{
+					"type":"instant"
+				}
+			],
+			"classes":{
+				"fromClassList":[
+					{
+						"name":"Wizard",
+						"source":"PHB"
+					}
+				]
+			},
+			"entries":[
+				"Six multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 30-foot cone must make a Dexterity saving throw. For each target, roll a {@dice 1d6} to determine which color ray affects it.",
+				{
+					"type": "table",
+					"page": 0,
+					"colLabels": [
+						"d6",
+						"Color",
+						"Ray Effect"
+					],
+					"rows": [
+						[
+							"1",
+							"Red",
+							"The target takes {@dice 4d6} fire damage on a failed save, or half as much on a successful one."
+						],
+						[
+							"2",
+							"Yellow",
+							"The target takes {@dice 4d6} lightning damage on a failed save, or half as much on a successful one."
+						],
+						[
+							"3",
+							"Green",
+							"The target takes {@dice 4d6} poison damage on a failed save, or half as much on a successful one."
+						],
+						[
+							"4",
+							"Indigo",
+							"On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind."
+						],
+						[
+							"5",
+							"Violet",
+							"On a failed save, the target is {@condition blinded}. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. They reappear after 1d4 turns to the spot closest to their original position."
+						],
+						[
+							"6",
+							"Special",
+							"The target is struck by two rays. Roll twice more, rerolling any 6."
+						]
+					]
+				}
+			],
+			"source":"Ryian",
+			"components":{
+				"v":true,
+				"s":true
+			}
+		}
+	],
+	"item":[
+		{
+			"name": "Rimeskin Potion",
+			"source": "Ryian",
+			"page": "4",
+			"type": "P",
+			"rarity": "Uncommon",
+			"entries": [
+				"When you drink this potion, you gain the effect of {@spell Armor of Agathys} as if it was cast at 2nd level.",
+				"This potions container seems to hold a tiny cloud inside"
+			],
+			"fluff": {
+				"entries": [
+					"We got these off the cult leader dude in session 4."
+				]
+			},
+			"attachedSpells":[
+				"Armor of Agathys"
+			]
+		},
+		{
+			"name": "Elemental Bracers",
+			"source": "Ryian",
+			"page": "4",
+			"wondrous": true,
+			"rarity": "Uncommon",
+			"reqAttune": true,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"While wearing these bracers, you gain a +1 bonus to your spell attack rolls and to the DCs of your spells.",
+				"Additionally, as a reaction you can absorb up to {@dice 3d8} elemental damage, and shoot it back as if casting {@spell chromatic orb}."
+			],
+			"attachedSpells":[
+				"chromatic orb"
+			]
+		},
         {
-            "name":"Wound Transference",
-            "level":"1",
-            "school":"N",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"touch"
-            },
-            "duration":[
-                {
-                    "type":"instant"
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "You touch a creature, inflicting {@damage 4d6} points of necrotic damage. Half of the damage you deal, you absorb and are able to heal yourself or another creature within 30 feet for such an amount."
-            ],
-            "source":"Ryian",
-            "components":{
-                "s":true,
-                "m": "a balanced material plane, which the spell consumes"
-            },
-            "entriesHigherLevel":[
-                {
-                    "type":"entries",
-                    "name":"At Higher Levels",
-                    "entries":[
-                        "The damage increases by {@damage 2d6} for each spell slot level above 1"
-                    ]
-                }
-            ],
-            "damageInflict":[
-                "necrotic"
-            ]
-        },
-        {
-            "name":"Conditional Strike",
-            "level":"2",
-            "school":"T",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"point",
-                "distance":{
-                    "type":"feet",
-                    "amount":60
-                }
-            },
-            "duration":[
-                {
-                    "type":"instant"
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "You target an enemy and an ally. Every condition on said ally is transferred onto the enemy, unless it succeeds on a COnstitution saving throw. For every condition, apart from unconscious, the enemy takes {@damage 2d8} force damage from the violent transfer and the ally heals for the same amount."
-            ],
-            "source":"Ryian",
-            "components":{
-                "s":true,
-                "v":true,
-                "m": "a balanced material plane, which the spell consumes"
-            }
-        },
-        {
-            "name":"Life Siphon",
-            "level":"3",
-            "school":"V",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"point",
-                "distance":{
-                    "type":"feet",
-                    "amount":120
-                }
-            },
-            "duration":[
-                {
-                    "type":"timed",
-                    "duration": {
-                        "type":"minute",
-                        "amount":1,
-                        "upTo": true
-                    },
-                    "concentration": true
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "You form a 20ft sphere within a space you can see which proceeds to suck the life out of anyone caught within it. Any creature that starts or ends it's turn within the sphere, must make a CON save or suffer {@damage 4d10} necrotic damage.Creatures hit by this ability can not heal or be healed until the start of their next turn.",
-                "Half of this damage can then be distributed as you see fit to allies within 60 feet of you."
-            ],
-            "source":"Ryian",
-            "components":{
-                "v":true,
-                "s":true,
-                "m":"a balanced material plane, which the spell consumes"
-            },
-            "damageInflict": [
-                "necrotic"
-            ],
-            "entriesHigherLevel":[
-                {
-                    "type":"entries",
-                    "name":"At Higher Levels",
-                    "entries":[
-                        "The damage increases by {@damage 1d6} for each spell slot level above 3"
-                    ]
-                }
-            ]
-        },
-        {
-            "name":"Aura of Balance",
-            "level":"4",
-            "school":"A",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"point",
-                "distance":{
-                    "type":"feet",
-                    "amount":60
-                }
-            },
-            "duration":[
-                {
-                    "type":"timed",
-                    "duration": {
-                        "type":"minute",
-                        "amount":1,
-                        "upTo": true
-                    },
-                    "concentration": true
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "You create an aura that extends 10 feet for the duration around yourself or an ally that hurts the wicked and protects those who fight against such things. When an enemy starts or ends its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} necrotic or radiant damage (your choice), or half as much on a successful one. Half the damage dealt will then be used as a shield for the righteous as temporary hit points that last for one round. A creature can willing fail this saving throw."
-            ],
-            "source":"Ryian",
-            "components":{
-                "v":true,
-                "s":true,                
-                "m": "a balanced material plane, which the spell consumes"
-            },
-            "entriesHigherLevel":[
-                {
-                    "type":"entries",
-                    "name":"At Higher Levels",
-                    "entries":[
-                        "The damage increases by {@damage 1d8} for each spell slot level above 4"
-                    ]
-                }
-            ]
-        },
-        {
-            "name":"Circle of Life",
-            "level":"5",
-            "school":"V",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"cone",
-                "distance":{
-                    "type":"feet",
-                    "amount":60
-                }
-            },
-            "duration":[
-                {
-                    "type":"instant"
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "Each enemy creature within 40 feet cone suffers {@damage 8d8} radiant, fire, necrotic or cold damage or half damage upon a successful dexterity save. The total damage dealt is the healing that you are able to give out to allies within the cone."
-            ],
-            "source":"Ryian",
-            "components":{
-                "v":true,
-                "s":true,
-                "m": "a balanced material plane, which the spell consumes"
-            }
-        },
-        {
-            "name":"Keeli's Prismatic Barrage",
-            "level":"3",
-            "school":"V",
-            "time":[
-                {
-                    "number":1,
-                    "unit":"action"
-                }
-            ],
-            "range":{
-                "type":"cone",
-                "distance":{
-                    "type":"feet",
-                    "amount":60
-                }
-            },
-            "duration":[
-                {
-                    "type":"instant"
-                }
-            ],
-            "classes":{
-                "fromClassList":[
-                    {
-                        "name":"Wizard",
-                        "source":"PHB"
-                    }
-                ]
-            },
-            "entries":[
-                "Six multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 30-foot cone must make a Dexterity saving throw. For each target, roll a {@dice 1d6} to determine which color ray affects it.",
-                {
-                    "type": "table",
-                    "page": 0,
-                    "colLabels": [
-                        "d6",
-                        "Color",
-                        "Ray Effect"
-                    ],
-                    "rows": [
-                        [
-                            "1",
-                            "Red",
-                            "The target takes {@dice 4d6} fire damage on a failed save, or half as much on a successful one."
-                        ],
-                        [
-                            "2",
-                            "Yellow",
-                            "The target takes {@dice 4d6} lightning damage on a failed save, or half as much on a successful one."
-                        ],
-                        [
-                            "3",
-                            "Green",
-                            "The target takes {@dice 4d6} poison damage on a failed save, or half as much on a successful one."
-                        ],
-                        [
-                            "4",
-                            "Indigo",
-                            "On a failed save, the target is {@condition restrained}. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind."
-                        ],
-                        [
-                            "5",
-                            "Violet",
-                            "On a failed save, the target is {@condition blinded}. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. They reappear after 1d4 turns to the spot closest to their original position."
-                        ],
-                        [
-                            "6",
-                            "Special",
-                            "The target is struck by two rays. Roll twice more, rerolling any 6."
-                        ]
-                    ]
-                }
-            ],
-            "source":"Ryian",
-            "components":{
-                "v":true,
-                "s":true
-            }
-        }
-    ],
-    "item":[
-        {
-            "name": "Rimeskin Potion",
+            "name": "Amulet of Sins",
             "source": "Ryian",
-            "page": "4",
-            "type": "P",
-            "rarity": "Uncommon",
-            "entries": [
-                "When you drink this potion, you gain the effect of {@spell Armor of Agathys} as if it was cast at 2nd level.",
-                "This potions container seems to hold a tiny cloud inside"
-            ],
-            "fluff": {
-                "entries": [
-                    "We got these off the cult leader dude in session 4."
-                ]
-            },
-            "attachedSpells":[
-                "Armor of Agathys"
-            ]
-        },
-        {
-            "name": "Elemental Bracers",
-            "source": "Ryian",
-            "page": "4",
-	        "wondrous": true,
-            "rarity": "Uncommon",
+            "page":"12",
+            "wondrous": true,
+            "rarity": "artifact",
             "reqAttune": true,
-            "bonusSpellAttack": "+1",
-	        "bonusSpellSaveDc": "+1",
-            "entries": [
-                "While wearing these bracers, you gain a +1 bonus to your spell attack rolls and to the DCs of your spells.",
-                "Additionally, as a reaction you can absorb up to {@dice 3d8} elemental damage, and shoot it back as if casting {@spell chromatic orb}"
+            "entries":[
+                "Crafted from the 6 Crowns of Sins. At the end of the long rest, you choose which vice is to attune to from the following list."
             ]
+        },
+        {
+            "name": "Amulet of Sins: Aspect of Wondrir",
+            "source": "Ryian",
+            "reqAttune":true,
+            "page":"13",
+            "rarity": "artifact",
+            "entries":[
+                "The Crown grants 2 abilities.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can cast {@spell Heat metal} or {@spell Fireball} through the amulet. The spells use your spellcasting modifier. Once you use this feature, you cannot use it again until you finish a long rest.",
+                        "**Gilded Touch.** You can try to restrain any creature you make a melee spell attack or melee attack on. The restrained creature makes 3 Constitution saving throws, and on 2 failures they turn into gold."
+                    ]
+                }
+            ],
             "attachedSpells":[
-                "chromatic orb"
+                "fireball",
+                "heat metal"
             ]
         }
-    ]
+	]
 }

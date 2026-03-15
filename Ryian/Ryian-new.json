@@ -645,7 +645,7 @@
             ]
         },
         {
-            "name": "Amulet of Sins: Aspect of Wondrir",
+            "name": "Aspect of Wondrir",
             "source": "Ryian",
             "reqAttune":true,
             "page":"13",
@@ -676,6 +676,19 @@
             "attachedSpells":[
                 "fireball",
                 "heat metal"
+            ]
+        },
+        {
+            "name": "Aspect of Sloth",
+            "source":"Ryian",
+            "page": 12,
+            "reqAttune":true,
+            "rarity":"artifact",
+            "entries": [
+                ""
+            ],
+            "attachedSpells":[
+                "slow"
             ]
         }
 	]

@@ -654,9 +654,22 @@
                 "The Crown grants 2 abilities.",
                 {
                     "type": "list",
+                    "style": "list-hang-notitle",
                     "items": [
-                        "You can cast {@spell Heat metal} or {@spell Fireball} through the amulet. The spells use your spellcasting modifier. Once you use this feature, you cannot use it again until you finish a long rest.",
-                        "**Gilded Touch.** You can try to restrain any creature you make a melee spell attack or melee attack on. The restrained creature makes 3 Constitution saving throws, and on 2 failures they turn into gold."
+                        {
+                            "type":"item",
+                            "name":"Burning Greed",
+                            "entries":[
+                                "You can cast {@spell Heat metal} or {@spell Fireball} through the amulet. The spells use your spellcasting modifier. Once you use this feature, you cannot use it again until you finish a long rest."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Gilded Touch",
+                            "entries": [
+                                "You can try to restrain any creature you make a melee spell attack or melee attack on. The restrained creature makes 3 Constitution saving throws, and on 2 failures they turn into gold."
+                            ]
+                        }
                     ]
                 }
             ],

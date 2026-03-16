@@ -651,7 +651,6 @@
             "page":"13",
             "rarity": "artifact",
             "entries":[
-                "The Crown grants 2 abilities.",
                 {
                     "type": "list",
                     "style": "list-hang-notitle",
@@ -685,11 +684,41 @@
             "reqAttune":true,
             "rarity":"artifact",
             "entries": [
-                ""
+                "Using this item, you can cast {@spell slow} equal times to your Proficiency Bonus. When casting slow like this, you do not require the material components."
             ],
             "attachedSpells":[
                 "slow"
             ]
-        }
+        },
+		{
+			"name": "Aspect of Lust",
+			"source":"Ryian",
+			"page":13,
+			"reqAttune":true,
+			"rarity":"artifact",
+			"entries": [
+				"While attuned to this item, you know a ritual to bond with a willing (or charmed) creature. If you are bonded with a creature, you gain the following features.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"entries":[
+						{
+							"type": "item",
+							"name": "Protect Me, My Love!",
+							"entries": [
+								"If your bonded pair is within 30 feet of you, when taking damage you may use your reaction to cause your bonded to take the damage instead of you. This damage cannot be reduced by any means. Once you use this feature equal times to your proficiency modifier, you cannot use it again until you finish a long rest."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Bond Boost",
+							"entries": [
+								"While within 30 feet of your bonded pair, you gain proficiency to your Attack Rolls, Ability Checks, and Saving Throws equal to half your companion's Proficiency Bonus."
+							]
+						}
+					]
+				}
+			]
+		}
 	]
 }

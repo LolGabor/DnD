@@ -767,6 +767,15 @@
 				"As an action, you can try to consume a creature, sucking them towards the extradimensional space. The creature must make a Strength saving throw against your spellcasting DC. On a failed save, the creature is devoured. While inside the stomach, the creature is {@condition deafened}, {@condition blinded}, {@condition restrained}, and takes acid damage equal to your level × d4 each turn.",
 				"As an action, the creature may make a Strength ({@skill Athletics}) check to escape the stomach. If you take 50 damage in a round, you are forced to expel the creature."
 			]
+		},
+		{
+			"name":"Intertwined Ring",
+			"source":"Ryian",
+			"page":4,
+			"rarity":"rare",
+			"entries":[
+				""
+			]
 		}
 	]
 }

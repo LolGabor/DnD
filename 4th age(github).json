@@ -2284,6 +2284,255 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Sagacious One Military Days",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "Tocreatestufffirt",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item +2 ring of protection|taldoreicampaignsettingreborn}"
+					]
+				},
+				{
+					"ac": 18,
+					"condition": "mage armor",
+					"braces": true
+				},
+				{
+					"ac": 20,
+					"from": [
+						"{@item shield|xphb}"
+					],
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "20d6 - 20",
+				"average": 50
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 8,
+			"int": 22,
+			"wis": 18,
+			"cha": 14,
+			"passive": 14,
+			"cr": "9",
+			"shortName": "TSO",
+			"page": 1,
+			"alignmentPrefix": "probably ",
+			"pbNote": "prodogy",
+			"level": 15,
+			"skill": {
+				"arcana": "+18",
+				"deception": "+8",
+				"history": "+12",
+				"insight": "+16",
+				"investigation": "+18",
+				"stealth": "+9",
+				"performance": "+14"
+			},
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"con": "+5",
+				"int": "+12",
+				"cha": "+8"
+			},
+			"resist": [
+				"cold",
+				"poison"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Sagacious One uses his mana outside the system of cramming leveled spells. For his spellcasting, use the Variant Rule: Spellpoints (94 spell points)"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Mage Hand}",
+								"{@spell Mending}",
+								"{@spell Mind Sliver|TCE}",
+								"{@spell Minor Illusion}",
+								"{@spell Prestidigitation|XPHB}",
+								"{@spell Shocking Grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Absorb Elements|XGE}",
+								"{@spell Magic Missile}",
+								"{@spell Shield}",
+								"{@spell Silvery Barbs|SCC}",
+								"{@spell Thin the Ice|KPDM}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell Knock}",
+								"{@spell Nystul's Magic Aura|XPHB}",
+								"{@spell Phantasmal Force}",
+								"{@spell Rime's Binding Ice|FTD}",
+								"{@spell Destructive Resonance|KPDM}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell Counterspell}",
+								"{@spell Dispel Magic}",
+								"{@spell Fireball}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell Blood Puppet|KPDM}",
+								"{@spell Dimension Door}",
+								"{@spell Raulothim's Psychic Lance|FTD}",
+								"{@spell Sickening Radiance|XGE}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell Danse Macabre|XGE}",
+								"{@spell Synaptic Static|XGE}",
+								"{@spell Wall of Force}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"trait": [
+				{
+					"name": "Abjuration experties",
+					"entries": [
+						"If the tso is subjected to an effect that allows it to make a saving throw to only take half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the tso has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the tso scores against a {@status surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Touch of the Beyond",
+					"entries": [
+						"Due to his high connection to upper layers, tso can mix in a touch of absolute magics into his spellcasting.",
+						"When casting a spell, he can expand 5 additional spellpoints to whisper a word of chaos to enhance the effects of it. If the spell hits or they fail a saving throw associated with the spell, they have disadvantage on their next ability check, attack roll, or saving throw."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Ambusher"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) Piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"shield|phb"
+			],
+			"reaction": [
+				{
+					"name": "Temporal design",
+					"entries": [
+						"When rolling initiative, tso can use his magic to rewind and start again. By spending 5 spellpoints, he can either not be {@status surprised|XPHB}, or add his intelligence modifier to his initiative. "
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "MAGIC!",
+					"entries": [
+						"tso casts a spell from his spell list"
+					]
+				},
+				{
+					"name": "Tactical repositioning",
+					"entries": [
+						"tso moves up to his speed"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shadow Step",
+					"entries": [
+						"As a bonus action, tso can use 4 spellpoints to teleport up to 45ft in any direction to an unoccupied space. While in dim light or darkness, the teleportation range is extended to 90ft."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O",
+				"R",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
 		}
 	],
 	"legendaryGroup": [
@@ -2448,7 +2697,17 @@
 					]
 				}
 			]
-		}
+		},
+		{
+			"name": "Glasses of the Restless Archmage",
+			"source": "4thage",
+			"type": "wondrous",
+			"rarity": "artifact",
+			"reqAttune":"by a wizard,",
+			"entries": [
+				""
+        ]
+    }
 	],
 	"language": [
 		{
@@ -2504,5 +2763,5 @@
 			"pantheon": "elven",
 			"symbol": "a droplet shaped prism"
 		}
-	]
+	]	
 }
